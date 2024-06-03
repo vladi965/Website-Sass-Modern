@@ -1,5 +1,5 @@
 @import "colors";
-@import 'media-queries';
+@import "media-queries";
 
 %align-center {
   display: flex;
@@ -27,7 +27,7 @@
     opacity: 0;
 
     @include tablet {
-      color:  $dark;
+      color: $dark;
       opacity: 1;
       position: absolute;
       top: 22px;
@@ -57,8 +57,20 @@
         transition: all 0.3s ease;
       }
     }
+
+    #button {
+      padding: 12px 24px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: $lime;
+      margin-left: 16px;
+      color: $light;
+
+      &:hover {
+        background: $orangeRed;
+        transition: all 0.3s ease;
+      }
+    }
   }
-
-
-
 }
